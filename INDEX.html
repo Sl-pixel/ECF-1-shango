@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatre Pattes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="pageContact">
+        <div>
+                <!-- logo Quatre Pattes -->
+            <img src="ECF PIC/logo-icon.png" alt="logo">
+            <p>Quatre Pattes</p>
+        </div>
+        <nav>
+            <a href="">Aceuil</a>
+            <a href="">Contact</a>
+            <button class="btnNav">
+                <img src="ECF PIC/coeur.png" alt="Coeur">
+                <a href=""> Faire un don</a>
+            </button>
+        </nav>
+    </header>
+
+    <section class="section1">
+        <!-- image des deux chiens a la montagne -->
+        <img src="ECF PIC/deux chiens cours.avif" alt="Deux chiens cotes a cotes" id="deuxChiens">
+        <h1>Protégeons-les ensemble</h1>
+        <p>Chaque don compte pour leur offrir une vie meilleure</p>
+    </section>
+
+    <section class="section2">
+        <h2>Faites un don</h2>
+        <div class="container">
+            <!-- change de couleur et contour onclick -->
+            
+                <button class="don" onclick="donVert()">
+                    <p><b>10€</b> <br>permet de nourrir 5 animaux pendant une journée</p>
+                </button>
+                <button class="don" onclick="donVert()">
+                    <p><b>20€</b><br>
+                    permet d’héberger un animal sauvage pendant une nuit</p>
+                </button>
+                <button class="don" onclick="donVert()">
+                    <p><b>50€</b> <br>
+                    permet de financer les soins vétérinaires complet pour un animal</p>
+                </button> 
+                <br>
+            <!-- Change de couleur Onclick -->
+                <button class="donTime" onclick="dureVert()">Une fois</button>
+                <button class="donTime" onclick="dureVert()">Mensuel</button>
+                <button>Annuel</button>
+           <br>
+            <button class="faireUnDOn">
+                <img src="ECF PIC/coeur.png" alt="coeur blanc">
+                <!-- Inner html fonction  -->
+                <p>Faitre un don de X€/mois</p>
+            </button>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div>
+            <!-- Image du labrador qui cours -->
+            <img src="ECF PIC/labrador.png" alt="Jeune labrador qucdi cours">
+        </div>
+        <div>
+            <h2>Notre Mission</h2>
+            <p>Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale. 
+            <br>
+            <br>
+            Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d'accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance. 
+            <br>
+            <br>
+                
+            Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
+        </div>
+    </section>
+
+    <section class="section4">
+        <!-- affichage du chien selectionné -->
+       <h2>Histoires de Réussite</h2>
+
+       <div class="photoAnimaux">
+            <div onclick="contourVert()">
+                <p>Luna</p>
+                <img src="ECF PIC/luna.avif" alt="Chie qui joue avec une corde">
+            </div>
+
+            <div onclick="contourVert()">
+                <p>Oscar</p>
+                <img src="ECF PIC/oscar.avif" alt="Oscar le Chat">
+            </div>
+            <div onclick="contourVert()">
+                <p>Max</p>
+                <img src="ECF PIC/max.avif" alt="Max le Pitbull">
+            </div>
+       </div>
+        <div id="display"></div>
+    </section>
+
+    <section class="section5">
+        <h2>Testez Vos Connaissances</h2>
+
+        <div>
+            <h3>Les asssociations gardent la majorité des dons pour leurs fonctionnement </h3>
+            <button  class="Vrai"> Vrai, les associations utilisent plus de 50% des
+                dons pour leurs frais de fonctionnement</button >
+            <button class="Faux">Faux</button >
+        </div>
+
+        <div>
+            <h3>Les refuges ne prennent que les animaux en bonne santé</h3>
+            <button  class="Vrai">Vrai, ils refusent les animaux malades car c’est 
+                trop coûteux</button >
+            <button  class="Faux">Faux</button >
+        </div>
+
+        <div>
+            <h3>Les asssociations ont trop de moyens grâce aux dons</h3>
+            <button  class="Vrai">Vrai, elles reçoivent beaucoup d’argent des  
+                donateurs</button >
+            <button  class="Faux">Faux</button >
+
+                <!-- innerHTML -->
+            <div id="displayTest">resultat vrai ou faux</div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <h2>Notre Impact</h2>
+
+        <div class="logoImpact">
+            <img src="ECF PIC/Vector.png" alt="refuges">
+            <p>50+ Refuges <span><br>Partenaires à travers la France</span></p>
+        </div>
+        <div class="logoImpact">
+            <img src="ECF PIC/logo.png" alt="Empreintes animal">
+            <p>1000+ Animaux<span><br>Sauvés chaque année</span></p>
+        </div>
+        <div class="logoImpact">
+            <img src="ECF PIC/lucide_fork-knife.png" alt="couvert">
+            <p>10 000+ Refuges <span><br>Sistribués par mois</span></p>
+        </div>
+    </section>
+
+    <section class="section7">
+        <h2>Témoignages</h2>
+        <div>
+            <img src="ECF PIC/chatchiens.avif" alt="chat et chiens qui joue">
+            <p>"Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance."  <br><br><b>Refuge des Quatre Pattes - Lyon</b></p>
+        </div>
+        <div>
+            <img src="ECF PIC/fondvertchat.avif" alt="chats qui prend la pause sur un fond vert">
+            <p>"Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse."<br><br><b>Sanctuaire Animal - Marseille</b></p>
+        </div>
+        <div>
+            <img src="ECF PIC/chatmains.avif" alt="chat check son maitre">
+            <p>"Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés."<br><br><b>Refuge du Soleil - Paris</b></p>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#top">Qautre Pattes</a></li>
+            <br>
+            <li>Ensemble, protégeons  les animaux et donnons-leur une vie meilleure.</li>
+        </ul>
+
+        <ul>
+            <li>Contact</li>
+            <li><a href="Contact.html">contact@quattrespattes.org</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Suivez-nous</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
