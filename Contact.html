@@ -4,67 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quatre Pattes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <linknk rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linknk href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="pageContact">
-        <div>
-                <!-- logo Quatre Pattes -->
-            <img src="ECF PIC/logo-icon.png" alt="logo">
-            <p>Quatre Pattes</p>
+
+    <header>
+        <div class="nomLogo">
+            <p><img src="ECF PIC/logo-icon.png" alt="logo"> <b>Quatre Pattes</b></p>
         </div>
-        <nav>
-            <a href="">Aceuil</a>
-            <a href="">Contact</a>
+        <nav class="nav">
+            <div class="penHeader"> 
+                <a href="">Acceuil</a>
+                <a href="">Contact</a>
+              </div>
+            
             <button class="btnNav">
-                <img src="ECF PIC/coeur.png" alt="Coeur">
+                <img class="logoCoeur" src="ECF PIC/coeur.png" alt="Coeur">
                 <a href=""> Faire un don</a>
             </button>
         </nav>
     </header>
     
-    <form action="nousContactez">
-        <label for="name">Nom</label> 
-        <br>
-        <input type="text" name="" id="nomForm"> <br>
-
-        <label for="eMail">Email</label> 
-        <br>
-        <input type="text" name="" id="mailForm">
-        <br>
-        <label for="Sujet">Sujet</label>
-        <select name="sujetList" id="listForm">
-
-        <option> -- Choisissez le sujet de la demande --
-                <option value="dons">Questions sur les dons</option>
-                <option value="pets">Questions sur les animaux</option>
-                <option value="adopter">Comment adopter ?</option>
-                <option value="accueil">Déposer un animal dans le besoin</option>
-        </option>
-        </select>
-        <br>
-        <label for="message">Message</label>
-        <br>
-        <input type="text">
-        <br>
-        <button type="submit">
-            <img src="ECF PIC/teenyicons_send-outline.png" alt="logo envoyer"><b>Envoyer</b></button>
-    </form>
-    
-    <footer>
-        <ul>
-            <li><a href="#top">Qautre Pattes</a></li>
+    <section>
+        <form action="nousContactez">
+            <label for="name">Nom</label> 
             <br>
-            <li>Ensemble, protégeons  les animaux et donnons-leur une vie meilleure.</li>
-        </ul>
+            <input type="text" name="" id="nomForm"> <br>
+    
+            <label for="eMail">Email</label> 
+            <br>
+            <input type="text" name="" id="mailForm">
+            <br>
+            <label for="Sujet">Sujet</label>
+            <select name="sujetList" id="listForm">
+    
+            <option> -- Choisissez le sujet de la demande --
+                    <option value="dons">Questions sur les dons</option>
+                    <option value="pets">Questions sur les animaux</option>
+                    <option value="adopter">Comment adopter ?</option>
+                    <option value="accueil">Déposer un animal dans le besoin</option>
+            </option>
+            </select>
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <input type="text">
+            <br>
+            <button type="submit">
+                <img src="ECF PIC/teenyicons_send-outline.png" alt="logo envoyer"><b>Envoyer</b></button>
+        </form>
+        
+    </section>
+    <footer>
+        <div>
+            <p class="bold"><a href="#top">Qautre Pattes</a></p>
+            <br>
+            <p>Ensemble, protégeons  les animaux et donnons-leur une vie meilleure.</p>
 
-        <ul>
-            <li>Contact</li>
-            <li><a href="Contact.html">contact@quattrespattes.org</a></li>
-        </ul>
-        <ul>
-            <li><a href="">Suivez-nous</a></li>
-        </ul>
-    </footer>
-    <script src="script.js"></script>
+        </div>
+        <div>
+            <p class="bold" style="color: white;">Contact</p>
+            <br>
+            
+            <p><img class="mailIcon" src="ECF PIC/mail-icon.png" alt="icon mail">
+                <a href="Contact.html">contact@quattrespattes.org</a></p>
+
+        </div>
+        <div><p class="bold"><a href="">Suivez-nous</a></p></div>
+</footer>
 </body>
 </html>

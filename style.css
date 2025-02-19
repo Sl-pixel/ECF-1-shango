@@ -1,0 +1,457 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    font-family: "Inter", serif;
+}
+
+/* .section2{
+    zoom: 1.3;
+} */
+
+/* Titre et texte */
+h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 60px;
+}
+.blanc {
+    color: white;
+   }
+
+/* header & nav*/
+
+header {
+    padding: 15px;
+    background-color: #057858;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50%;
+}
+.nomLogo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+header div p {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.lienHeader {
+    width: 125px;
+    gap: 30pX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnNav {
+    width: 140px;
+    height: 35px;
+    padding: 20px;
+    gap: 3px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoCoeur {
+    width: 18px;
+    height: auto;
+    
+}
+
+/* image acceuil */
+
+.section1 {
+    background-image: url('ECF PIC/deux chiens cours.avif'); 
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 850px;
+}
+.section1 div {
+    background-color: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section1 h1 {
+    font-size: 80px;
+}
+.section1 p {
+    font-size: 30px;
+}
+
+/* section 2 */
+
+.section2 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* type de don */
+.container {
+    border-radius: 10px;
+    padding: 20px;
+    height: 280px;
+    width: 50%;
+    box-shadow: -17px 13px 42px -29px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+
+
+.btndon {
+    margin: 5px ;
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    border-radius: 5px;
+    background-color: white;    
+}
+
+.btndon p {
+    color: #9b9b9b;
+}
+
+.bold {
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+}
+
+/* Recurence du don */
+.choixDure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.choixDon {
+    height: 60%;
+}
+
+.donTime {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* btn faire un don  */
+
+.faireUnDon {
+    width: 100%;
+    height: 40px;
+    font-weight: 800;
+    background-color: rgb(205, 23, 23);
+    border: none;
+    border-radius: 10PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.coeurDon {
+    width: 15px;
+}
+
+/* section 3 */
+
+.section3 {
+    background-color: #EDFEF6;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container3 {
+    height: 500px;
+    width: 1400px;
+    margin: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 1px 15px -8px
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+/* image */
+.container3 img {
+   flex: 1;
+   height: 500px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+/* texte */
+ .missionCase {
+    flex: 1;
+    padding: 20px;
+    margin: 35px;
+} 
+.missionCase p {
+    font-size: 20px;
+    color: #272727;
+}
+
+/* section 4 */
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 120px;
+}
+/* style pet */
+
+.box {
+    width: 500px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 10px 10px 100px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+/* trois box pet */
+.box:nth-child(1) {
+    background-image: url('ECF PIC/luna.avif'); 
+}
+.box:nth-child(2) {
+    background-image: url('ECF PIC/oscar.avif'); 
+
+}
+.box:nth-child(3) {
+    background-image: url('ECF PIC/max.avif'); 
+}
+
+/* style texte */
+.photoAnimaux p {
+    font-weight: 700;
+    color: white;
+}
+/* position box */
+.photoAnimaux {
+    width: 1200px ;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*  selection image */
+#displayAnimaux {
+    width: 1200px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('ECF PIC/luna.avif'); 
+    box-shadow: inset 50px 50px 400px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+.datePet {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #a3a3a3;
+}
+
+.nomDisplayPet {
+    margin-left: 50px;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+.textDisplayPet{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+}
+
+/* section 5 */
+
+.section5 {
+    padding: 3%;
+    background-color: #EDFEF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: auto;
+    
+}
+
+.test {
+    width: 850px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* btn apparence */
+.section5 button {
+    font-size:12px;
+    font-weight: 500;
+    width: 400px;
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* boite tquestion */
+.fondTest {
+    padding: 20px;
+    background-color: white;
+    height: 65%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 29px -16px 
+}
+
+/* question du test */
+.fondTest p {
+    position: relative;
+    font-weight: 700;
+    margin: 8px;
+    right: 1%;
+}
+
+.repTest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* section 5.2 */
+
+.section5-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logoImpact img {
+    width: 30%;
+}
+
+.logoImpact {
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+}
+.logoImpact2 {
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+}
+.logoImpact p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h5 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* section 6 */
+
+.section6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+.container6 {
+    display: flex;
+    gap: 7%;
+}
+
+.story {
+    flex: 1.5;
+    object-fit: cover;
+    height: 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.section6 p {
+    margin: 20px;
+    flex: 0.9;
+    text-align: left;
+}
+.box2 {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 30%;
+    height:320px;
+    box-shadow: 0px 4px 29px -16px 
+}
+
+/* footer */
+
+footer {
+    padding: 30px;
+    height: 100px;
+    background-color:#1F2937;
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+}
+footer p {
+    display: flex;
+    color: white;
+    gap: 10%;
+}
+
+
+.mailIcon {
+    width: 15px;
+}z
