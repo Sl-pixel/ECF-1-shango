@@ -15,56 +15,52 @@
             <p><img src="ECF PIC/logo-icon.png" alt="logo"> <b>Quatre Pattes</b></p>
         </div>
         <nav class="nav">
-            <div> 
-                <a href="">Acceuil</a>
-                <a href="">Contact</a>
+            <div class="lienHeader"> 
+                <a href="INDEX.html">Acceuil</a>
+                <a href="Contact.html">Contact</a>
+                
               </div>
-            
-            <button class="btnNav">
+              <button class="btnNav">
                 <img class="logoCoeur" src="ECF PIC/coeur.png" alt="Coeur">
-                <a href=""> Faire un don</a>
+                <a href="Contact.html"> Faire un don</a>
             </button>
         </nav>
     </header>
 
     <section class="section1">
-        <!-- image des deux chiens a la montagne -->
-        <!-- <img src="ECF PIC/deux chiens cours.avif" alt="Deux chiens cotes a cotes" id="deuxChiens"> -->
-        <div><h1 class="blanc" >Protégeons-les ensemble</h1>
-        <p class="blanc">Chaque don compte pour leur offrir une vie meilleure</p>
+        <div class="s1-size">
+            <h1 class="blanc" >Protégeons-les ensemble</h1>
+            <p class="blanc">Chaque don compte pour leur offrir une vie meilleure</p>
         </div>
     </section>
 
     <section class="section2">
         <h2>Faites un don</h2>
         <div class="container">
-            <!-- change dur et contour oncpck -->
             
                <div class="choixDon">
-                    <button class="btndon" onclick="donVert()">
-                        <p><span class="bold">10€</span><br>permet de nourrir 5 animaux pendant une journée</p>
+                    <button class="btndon">
+                        <p><span class="bold" id="10">10€</span><br>permet de nourrir 5 animaux pendant une journée</p>
                     </button>
-                    <button class="btndon" onclick="donVert()">
-                        <p><span class="bold">20€</span><br>
+                    <button class="btndon">
+                        <p><span class="bold" id="20">20€</span><br>
                         permet d’héberger un animal sauvage pendant une nuit</p>
                     </button>
-                    <button class="btndon" onclick="donVert()">
-                        <p><span class="bold">50€</span><br>
+                    <button class="btndon">
+                        <p><span class="bold" id="50">50€</span><br>
                         permet de financer les soins vétérinaires complet pour un <br>animal</p>
                     </button> 
                </div>
                 <br>
-            <!-- Change dur Oncpck -->
                 <div class="choixDure">
-                    <button class="donTime" oncpck="dureVert()">Une fois</button>
-                    <button class="donTime" oncpck="dureVert()">Mensuel</button>
-                    <button  class="donTime" oncpck="dureVert()" >Annuel</button>
+                    <button class="donTime" id="uneFois">Une fois</button>
+                    <button class="donTime"  id="mensuel">Mensuel</button>
+                    <button  class="donTime" id="annuel" >Annuel</button>
                 </div>
            <br>
-            <button class="faireUnDon">
+            <button class="faireUnDon" onclick="ok()">
                 <img class="coeurDon" src="ECF PIC/coeur.png" alt="coeur blanc"> 
-                <!-- Inner html fonction  -->
-                <p class="blanc" >Faitre un don de X€/mois</p>
+                <p class="blanc" id="displayDon" >Faire un don de 10€ une fois</p>
             </button>
         </div>
     </section>
@@ -72,10 +68,7 @@
     <section class="section3">
         
        <div class="container3">
-            <div class="chien">
-                <!-- Image du labrador qui cours -->
-                <img src="ECF PIC/labrador.png" alt="Jeune labrador qucdi cours">
-            </div>
+            <img src="ECF PIC/labrador.png" alt="Jeune labrador qucdi cours">
             <div class="missionCase">
                 <h3>Notre Mission</h3>
                 <p>Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibipser le pubpc à la cause animale. 
@@ -93,25 +86,25 @@
     <section class="section4">
        <h2>Histoires de Réussite</h2>       
         <div id="displayAnimaux" >
-            <p class="nomDisplayPet" >Luna</p> 
+            <p class="nomDisplayPet" id="displayName">Luna</p> 
             <br>
-            <p class="textDisplayPet">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Ell maintenant des jours heureux dans sa nouvelle famille.</p>
+            <p class="textDisplayPet" id="petHistoire">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle vie maintenant des jours heureux dans sa nouvelle famille.</p>
             <br>
             <p class="datePet">janvier 2024</p>
         </div>
        <div class="photoAnimaux">
-            <div class="box">
-                <p class="luna" oncpck="contourVert()" >Luna</p>
+            <div class="box" onclick="afficherLuna()">
+                <p class="luna">Luna</p>
             </div>
 
-            <div class="box">
-                <p class="oscar" oncpck="contourVert()">Oscar</p>
+            <div class="box" onclick="afficherOscar()">
+                <p class="oscar">Oscar</p>
             </div>
-            <div class="box">
-                <p class="max" oncpck="contourVert()">Max</p>
+            <div class="box" onclick="afficherMax()">
+                <p class="max">Max</p>
             </div>
        </div>
-        
+    
     </section>
 
     <section class="section5">
@@ -121,8 +114,8 @@
             <div class="fondTest">
                 <p>Les asssociations gardent la majorité des dons pour leurs fonctionnement </p>
                 <div class="repTest">
-                    <button  class="Vrai"> Vrai, les associations utipsent plus de 50% des dons pour leurs frais de fonctionnement</button >
-                    <button class="Faux">Faux</button >
+                    <button> Vrai, les associations utipsent plus de 50% des dons pour leurs frais de fonctionnement</button >
+                    <button>Faux</button >
                 </div>
             </div>
            
@@ -132,8 +125,8 @@
             <div class="fondTest"> 
                 <p>Les refuges ne prennent que les animaux en bonne santé</p>
                 <div class="repTest">
-                    <button  class="Vrai">Vrai, ils refusent les animaux malades car c’est trop coûteux</button >
-                    <button  class="Faux">Faux</button >
+                    <button>Vrai, ils refusent les animaux malades car c’est trop coûteux</button >
+                    <button>Faux</button >
                 </div>
             </div>
         </div>
@@ -142,13 +135,13 @@
             <div class="fondTest">
                 <p>Les asssociations ont trop de moyens grâce aux dons</p>
                 <div class="repTest">
-                    <button  class="Vrai">Vrai, elles reçoivent beaucoup d’argent des  donateurs</button >
-                    <button  class="Faux">Faux</button >
+                    <button>Vrai, elles reçoivent beaucoup d’argent des  donateurs</button >
+                    <button>Faux</button >
               </div>
             </div>
                 <!-- innerHTML -->
         </div>
-        <div id="displayTest">at vrai ou faux</div>
+        <div id="displayTest"></div>
 
         <!-- section 5 partie 2 -->
  
@@ -168,7 +161,7 @@
             <div class="logoImpact">
                 <img src="ECF PIC/lucide_fork-knife.png" alt="couvert"> <br><br>
                 <h5>10 000+ Refuges</h5> <br>
-                <p>Sistribués par mois</p> <br>
+                <p>Distribués par mois</p> <br>
             </div>
         </div>
     </section>
